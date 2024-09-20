@@ -11,6 +11,7 @@
 GET - http://localhost:8080/list
 ![1번](https://github.com/user-attachments/assets/76e526c7-2289-49df-992d-90609024d8c2)
 <br>
+<br>
 
 **2.User가 체크 리스트 추가하기** <br>
 POST - http://localhost:8080/list/{userId}?item={content}
@@ -28,6 +29,8 @@ POST - http://localhost:8080/list/{userId}?item={content}
 
 
 <br>
+<br>
+
 **3.User의 체크리스트 조회하기**
 <br>GET - http://localhost:8080/list/{userId}
 <br>*userid는 pathvariable 사용, MAP 형태로 리스트를 만들지 않아 user에 대한 list는 나오지 않고 통일된 전체 list로 결과가 나옴
@@ -37,6 +40,8 @@ POST - http://localhost:8080/list/{userId}?item={content}
 ![3](https://github.com/user-attachments/assets/4ae3efba-6a15-4b4a-b938-6825f16c0a96)
 
 <br>
+<br>
+
 **4. User의 체크리스트 수정하기**
 <br>PATCH - http://localhost.1:8080/list/{userId}/{number}?newContent={content}
 <br>*userid와 number는 pathvariable, newContent requestparam 사용
@@ -48,7 +53,9 @@ POST - http://localhost:8080/list/{userId}?item={content}
 결과<br>
 
 ![4-2](https://github.com/user-attachments/assets/87265214-d4d0-4aeb-a618-b38412ce4855)
-<br<
+<br>
+<br>
+
 **5.User의 체크리스트 삭제하기**
 <br>DELETE - http://localhost:8080/list/{userId}/{number}
 <br>*userid와 number는 pathvariable 사용
@@ -59,6 +66,7 @@ POST - http://localhost:8080/list/{userId}?item={content}
 결과<br>
 
 ![5-2](https://github.com/user-attachments/assets/a7d1ae0f-51fb-4b34-8519-ce4956ede03e)
+<br>
 <br>
 
 ---
