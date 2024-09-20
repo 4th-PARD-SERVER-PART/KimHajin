@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c4c9157c-e2dd-4b24-9e8c-5b4645db7ee1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HW1/src/main/java/com/server/pard/HW1/ChecklistRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../week3/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HW1/src/main/java/com/server/pard/HW1/ChecklistRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/HW1/src/main/java/com/server/pard/HW1/ChecklistRestController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../week3/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../week3/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,6 +71,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "spring.configuration.checksum": "798bf239ee78dca173a282d7f4244ebd",
     "vue.rearranger.settings.migration": "true"
   }
@@ -95,7 +95,7 @@
       <updated>1726297940010</updated>
       <workItem from="1726297948180" duration="314000" />
       <workItem from="1726301655663" duration="2052000" />
-      <workItem from="1726794861116" duration="472000" />
+      <workItem from="1726794861116" duration="4203000" />
     </task>
     <servers />
   </component>
