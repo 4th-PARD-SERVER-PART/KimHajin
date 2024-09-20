@@ -22,13 +22,11 @@ public class ChecklistRestController {
         return "전체 체크 리스트를 조회합니다.\n" + checklist;
     }
 
-    @PostMapping("")
-    public String postAllList(){
-        return "전체 체크 리스트를 저장합니다.";
-    }
-
     @PostMapping("/{userId}")
     public String postList(@PathVariable String userId , @RequestParam String item){
+        if (item == null) {
+            return "빈 항목은 추가할 수 없습니다.";
+        }
         checklist.add(item);
         return userId + "님의 체크리스트에 " + item + "가 추가되었습니다.";
     }
@@ -43,11 +41,14 @@ public class ChecklistRestController {
         if (num < 1 || num > checklist.size()) {
             return num + "번 항목을 찾을 수 없습니다.";
         }
+        else if (newContent == null) {
+            return "빈 항목은 추가할 수 없습니다.";
+        }
         checklist.set(num - 1, newContent);
-        return userid + "님의 체크리스트에서 " + num + "번 리스트가 " + newContent + " 로 수정되었습니다.";
+        return userid + "님이 작성하신 체크리스트의 " + num + "번 리스트가 " + newContent + " 로 수정되었습니다.";
     }
 
-    @DeleteMapping("/{userId}/{num}")
+    @DeleteMapping("/{num}")
     public String deleteList(@PathVariable String userId, @PathVariable Integer num){
         if (num < 1 || num > checklist.size()) {
             return num + "번 항목을 찾을 수 없습니다.";
