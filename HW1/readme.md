@@ -1,7 +1,7 @@
 ---
 
 # **Hw1 - hajin**  
-나만의 컨트롤러 만들기 - Checklist Controller (간단한 Checklist CRUD)  
+나만의 컨트롤러 만들기 - Checklist Controller  
 
 * 임의로 리스트를 컨트롤러 내에 만들어 결과가 나오게 하였음  
 * MAP 형태로 리스트를 만들지 않아 user에 대한 리스트는 나오지 않고 통일된 전체 리스트로 결과가 나옴  
