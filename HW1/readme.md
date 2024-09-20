@@ -57,4 +57,8 @@
 
 **짝궁 Controller 접속하기!**
 
+![image](https://github.com/user-attachments/assets/376f021b-5026-43ec-a94c-695c339be367)
+
+민규오빠의 Controller에 접속했다 왔습니다 ~
+
 ---
