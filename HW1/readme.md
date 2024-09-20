@@ -18,10 +18,14 @@ POST - http://localhost:8080/list/{userId}?item={content}
 <br>ex - http://localhost:8080/list/hajin?item=잘살자
 
 <br>
+
 ![2-1](https://github.com/user-attachments/assets/4757045a-1156-4f56-93e0-4e619d83ee03)
+
 <br>
 결과<br>
+
 ![2-2](https://github.com/user-attachments/assets/d019b14b-0a97-497d-a82a-9c2407805e88)
+
 
 <br>
 **3.User의 체크리스트 조회하기**
@@ -29,7 +33,8 @@ POST - http://localhost:8080/list/{userId}?item={content}
 <br>*userid는 pathvariable 사용, MAP 형태로 리스트를 만들지 않아 user에 대한 list는 나오지 않고 통일된 전체 list로 결과가 나옴
 <br>ex - http://localhost.1:8080/list/hajin
 <br>
-![2-2](https://github.com/user-attachments/assets/d019b14b-0a97-497d-a82a-9c2407805e88)
+
+![3](https://github.com/user-attachments/assets/4ae3efba-6a15-4b4a-b938-6825f16c0a96)
 
 <br>
 **4. User의 체크리스트 수정하기**
@@ -37,9 +42,11 @@ POST - http://localhost:8080/list/{userId}?item={content}
 <br>*userid와 number는 pathvariable, newContent requestparam 사용
 <br>ex - http://localhost:8080/list/hajin/4?newContent=잘지내자
 <br>
+
 ![4](https://github.com/user-attachments/assets/65b9dee2-e6ea-4f00-8a44-7dd2e271de18)
 <br>
 결과<br>
+
 ![4-2](https://github.com/user-attachments/assets/87265214-d4d0-4aeb-a618-b38412ce4855)
 <br<
 **5.User의 체크리스트 삭제하기**
@@ -47,9 +54,10 @@ POST - http://localhost:8080/list/{userId}?item={content}
 <br>*userid와 number는 pathvariable 사용
 <br>ex- http://localhost:8080/list/hajin/4
 <br>
-![4-2](https://github.com/user-attachments/assets/87265214-d4d0-4aeb-a618-b38412ce4855)
+![5](https://github.com/user-attachments/assets/f72a48b9-d6ca-4765-9f70-c1e633fdba5a)
 <br>
 결과<br>
+
 ![5-2](https://github.com/user-attachments/assets/a7d1ae0f-51fb-4b34-8519-ce4956ede03e)
 <br>
 
