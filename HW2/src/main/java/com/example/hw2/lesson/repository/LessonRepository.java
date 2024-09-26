@@ -32,13 +32,13 @@ public class LessonRepository {
 
     public List<LessonDto> findByCategory(String lessonCategory) {
         return lessonList.values().stream()
-                .filter(lesson -> lesson.getLessonCategory().equals(lessonCategory)) // 카테고리 필터링
+                .filter(lesson -> lesson.getLessonCategory().equals(lessonCategory))
                 .map(lesson -> LessonDto.builder()
                         .lessonName(lesson.getLessonName())
                         .lessonCredit(lesson.getLessonCredit())
                         .lessonCategory(lesson.getLessonCategory())
                         .build())
-                .toList(); // Stream을 List로 변환
+                .toList();
     }
 
 
