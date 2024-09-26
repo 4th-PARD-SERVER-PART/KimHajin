@@ -21,11 +21,16 @@ public class LessonController {
     }
 
     //과목정보 불러오기
-    @GetMapping("/{lessonName}")
+    @GetMapping("/1/{lessonName}")
     public LessonDto findByname(@PathVariable String lessonName , @RequestBody LessonDto lessonDto ){
         return lessonService.findByname(lessonName);
     }
 
+    //카테고리에 있는 과목 정보 불러오기
+    @GetMapping("/2/{lessonCategory}")
+    public List<LessonDto> findByCategory(@PathVariable String lessonCategory){
+        return lessonService.findByCategory(lessonCategory);
+    }
 
     //과목 리스트 불러오기
     @GetMapping("")

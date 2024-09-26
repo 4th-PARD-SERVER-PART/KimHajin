@@ -30,6 +30,17 @@ public class LessonRepository {
                 .build();
     }
 
+    public List<LessonDto> findByCategory(String lessonCategory) {
+        return lessonList.values().stream()
+                .filter(lesson -> lesson.getLessonCategory().equals(lessonCategory)) // 카테고리 필터링
+                .map(lesson -> LessonDto.builder()
+                        .lessonName(lesson.getLessonName())
+                        .lessonCredit(lesson.getLessonCredit())
+                        .lessonCategory(lesson.getLessonCategory())
+                        .build())
+                .toList(); // Stream을 List로 변환
+    }
+
 
     public List<LessonDto> findAll(){
         return lessonList.values().stream()

@@ -19,6 +19,9 @@ public class LessonService {
         return lessonRepository.findByname(lessonName);
     }
 
+    public List<LessonDto> findByCategory(String lessonCategory){
+        return lessonRepository.findByCategory(lessonCategory);
+    }
 
     public List<LessonDto> findAll(){
         return lessonRepository.findAll();
