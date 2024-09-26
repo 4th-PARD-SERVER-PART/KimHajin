@@ -7,37 +7,40 @@
 
 ## 1. Create - 수강한 과목 정보 추가하기   
 **POST**: `http://localhost:8080/lesson`  
-<img src="https://github.com/user-attachments/assets/76e526c7-2289-49df-992d-90609024d8c2" width="300"/>  
+![1-1](https://github.com/user-attachments/assets/df678c04-1daf-4e09-b0dc-f42ff0d20196)
+![1-2](https://github.com/user-attachments/assets/e25982ac-672a-41f5-90a8-ceefcea29347)
 
 ---
 
 ## 2. Read - 수강했던 과목 정보 조회하기  
-**GET**: `http://localhost:8080/lesson/1/{lessonName}`   
-<img src="https://github.com/user-attachments/assets/4757045a-1156-4f56-93e0-4e619d83ee03" width="300"/>  
+**GET**: `http://localhost:8080/lesson/1?lessonName={lessonName}`   
+![2](https://github.com/user-attachments/assets/41738607-f9b0-4c6a-8937-de4fea9e377f)
 
 ---
 
 ## 3. Read - 수강했던 과목 전체 정보 조회하기 
 **GET**: `http://localhost:8080/lesson`  
-<img src="https://github.com/user-attachments/assets/4ae3efba-6a15-4b4a-b938-6825f16c0a96" width="300"/>  
+![3](https://github.com/user-attachments/assets/b9f4300e-8097-4d3c-adaf-066cd6fc54de)
 
 ---
 
 ## 4. Read - 카테고리로 수강했던 과목 정보 조회하기  
-**GET**: `http://localhost:8080/lesson/2/{lessonCategoty}`    
-<img src="https://github.com/user-attachments/assets/65b9dee2-e6ea-4f00-8a44-7dd2e271de18" width="300"/>  
+**GET**: `http://localhost:8080/lesson/2?lessonCategory={lessonCategory}` 
+![4](https://github.com/user-attachments/assets/97dacc0b-c0d4-4819-a702-3d8166815e2c)
 
 ---
 
 ## 5. Update - 수강했던 과목 정보 수정하기  
-**PATCH**: `http://localhost:8080/lesson/{lessonName}`   
-<img src="https://github.com/user-attachments/assets/f72a48b9-d6ca-4765-9f70-c1e633fdba5a" width="300"/>  
+**PATCH**: `http://localhost:8080/lesson?lessonName={lessonName}`   
+![5-1](https://github.com/user-attachments/assets/bfbc8e6d-1188-4882-912e-0f3491e83266)
+![5-2](https://github.com/user-attachments/assets/484bdbe3-ff58-4379-b2e0-ce56b1c5a200)
 
 ---
 
 ## 5. Delete - 수강했던 과목 정보 삭제하기  
-**DELETE**: `http://localhost:8080/lesson/{lessonName}`   
-<img src="https://github.com/user-attachments/assets/f72a48b9-d6ca-4765-9f70-c1e633fdba5a" width="300"/>  
+**DELETE**: `http://localhost:8080/lesson?lessonName={lessonName}`   
+![6](https://github.com/user-attachments/assets/f363e26f-4802-4a9f-aa25-27bc9d7ff83d)
+![6-2](https://github.com/user-attachments/assets/78794b80-34cb-46bc-a331-a5277bddbb91)
 
 ---
 #rieview
