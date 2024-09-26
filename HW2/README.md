@@ -41,4 +41,6 @@
 
 ---
 #rieview
-<br> pathcvariable로 했을 때 postman에서 첫번째 send된 요청에는 404 에러가 발생하고 똑같은 url로 두 번 요청을 send해야 200 ok가 뜬다. 반면 requestparam을 이용하여 하였을 때는 첫번째 요청에도 바로 결과가 뜬다.(200 ok) 특성 차이로 인한 것인지 물어봐야할 것 같다. 
+<br> pathvariable로 했을 때 postman에서 첫번째 send된 요청에는 404 에러가 발생하고 똑같은 url로 두 번 요청을 send해야 200 ok가 뜬다. 반면 requestparam을 이용하여 하였을 때는 첫번째 요청에도 바로 결과가 뜬다.(200 ok) 특성 차이로 인한 것인지 물어봐야할 것 같다. 
+<br> gpt 답변 - PathVariable을 사용하는 경우, URL이 변경되면 브라우저나 Postman에서 캐시가 발생하거나 요청 경로와 관련된 캐싱 문제가 발생할 수 있습니다. 예를 들어 /lessons/Math와 같은 경로가 첫 번째 요청에서 캐시되고, 두 번째 요청에서만 제대로 작동하는 상황이 있을 수 있습니다.
+반면 RequestParam 방식 (/lessons?lessonName=Math)은 캐싱이 덜 발생할 수 있으며, 쿼리 파라미터로 데이터가 전달되기 때문에 한 번에 처리가 잘 될 가능성이 높습니다.
