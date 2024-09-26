@@ -21,14 +21,14 @@ public class LessonController {
     }
 
     //과목정보 불러오기
-    @GetMapping("/1/{lessonName}")
-    public LessonDto findByname(@PathVariable String lessonName , @RequestBody LessonDto lessonDto ){
+    @GetMapping("/1")
+    public LessonDto findByname(@RequestParam String lessonName ){
         return lessonService.findByname(lessonName);
     }
 
     //카테고리에 있는 과목 정보 불러오기
-    @GetMapping("/2/{lessonCategory}")
-    public List<LessonDto> findByCategory(@PathVariable String lessonCategory){
+    @GetMapping("/2")
+    public List<LessonDto> findByCategory(@RequestParam String lessonCategory){
         return lessonService.findByCategory(lessonCategory);
     }
 
@@ -39,15 +39,15 @@ public class LessonController {
     }
 
     //과목 정보 수정하기
-    @PatchMapping("/{lessonName}")
-    public String updateByName(@PathVariable String lessonName, @RequestBody LessonDto lessonDto){
+    @PatchMapping("")
+    public String updateByName(@RequestParam String lessonName, @RequestBody LessonDto lessonDto){
         lessonService.updateByName(lessonName, lessonDto);
         return "수정되었습니다.";
     }
 
     //과목 삭제하기
-    @DeleteMapping("/{lessonName}")
-    public String deleteByName(@PathVariable String lessonName){
+    @DeleteMapping("")
+    public String deleteByName(@RequestParam String lessonName){
         lessonService.deleteByName(lessonName);
         return "삭제되었습니다.";
     }
