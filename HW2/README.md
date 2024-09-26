@@ -38,3 +38,7 @@
 ## 5. Delete - 수강했던 과목 정보 삭제하기  
 **DELETE**: `http://localhost:8080/lesson/{lessonName}`   
 <img src="https://github.com/user-attachments/assets/f72a48b9-d6ca-4765-9f70-c1e633fdba5a" width="300"/>  
+
+---
+#rieview
+<br> pathcvariable로 했을 때 postman에서 첫번째 send된 요청에는 404 에러가 발생하고 똑같은 url로 두 번 요청을 send해야 200 ok가 뜬다. 반면 requestparam을 이용하여 하였을 때는 첫번째 요청에도 바로 결과가 뜬다.(200 ok) 특성 차이로 인한 것인지 물어봐야할 것 같다. 
