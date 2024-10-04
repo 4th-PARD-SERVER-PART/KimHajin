@@ -9,7 +9,7 @@ import lombok.*;
 @Builder
 public class BugerDto {
 
-    private String bugerName;
-    private Long bugerPrice;
+    private String burgerName;
+    private Long burgerPrice;
 
 }

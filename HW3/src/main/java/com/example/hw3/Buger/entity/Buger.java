@@ -18,19 +18,19 @@ public class Buger {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long bugerId;
+    private Long burgerId;
 
     @Column(name = "name")
-    private String bugerName;
+    private String burgerName;
 
     @Column(name = "price" , length = 20)
-    private Long bugerPrice;
+    private Long burgerPrice;
 
     @CreationTimestamp
-    private Timestamp bugerSignupTime;
+    private Timestamp burgerCreateAt;
 
     public void update(String bugerName, Long bugerPrice){
-        this.bugerName = bugerName;
-        this.bugerPrice = bugerPrice;
+        this.burgerName = bugerName;
+        this.burgerPrice = bugerPrice;
     }
 }
