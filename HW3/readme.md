@@ -16,7 +16,7 @@
 ## 2. Read - 메뉴 하나 조회하기 
 **GET**: `http://localhost:8080/burgur/{burgurId}`   
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/cf4e5c6f-f862-4e04-9117-42b70db49a61" alt="2" width="400"/>
+  <img src="https://github.com/user-attachments/assets/04a38ded-b76e-43ec-9962-c8fbb9b9dac8" alt="2" width="400"/>
 </p>
 
 ---
@@ -24,7 +24,7 @@
 ## 3. Read - 메뉴 전체 조회하기 
 **GET**: `http://localhost:8080/burgur`  
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/04a38ded-b76e-43ec-9962-c8fbb9b9dac8" alt="3" width="400"/>
+  <img src="https://github.com/user-attachments/assets/cf4e5c6f-f862-4e04-9117-42b70db49a61" alt="3" width="400"/>
 </p>
 
 ---
