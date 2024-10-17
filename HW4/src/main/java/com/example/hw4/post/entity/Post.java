@@ -29,4 +29,7 @@ public class Post {
     @OneToMany(mappedBy = "post")
     private List<Like> likes;
 
+    public static Post form(String title, String content, User user){
+        return new Post(null, title, content, user, null);
+    }
 }

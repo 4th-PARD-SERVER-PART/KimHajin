@@ -1,9 +1,10 @@
 package com.example.hw4.user.controller;
 
 import com.example.hw4.user.dto.UserResponseDto;
-import com.example.hw4.user.dto.UserResquestDto;
+import com.example.hw4.user.dto.UserRequestDto;
 import com.example.hw4.user.service.UserService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,7 +20,8 @@ public class UserController {
     }
 
     @PostMapping("")
-    public void createUser (@RequestBody UserResquestDto.UserCreateRequest req){
+    public ResponseEntity<String> createUser (@RequestBody UserRequestDto.UserCreateRequest req){
         userService.createUser(req);
+        return ResponseEntity.status(HttpStatus.CREATED).body("저장되었습니다.");
     }
 }

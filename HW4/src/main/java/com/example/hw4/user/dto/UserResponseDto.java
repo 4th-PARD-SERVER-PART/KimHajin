@@ -25,7 +25,7 @@ public class UserResponseDto {
                     user.getId(),
                     user.getName(),
                     user.getPosts().stream()
-                            .map(PostResponseDto.PostRead::from) 
+                            .map(PostResponseDto.PostRead::from)
                             .collect(Collectors.toList())
             );
         }
