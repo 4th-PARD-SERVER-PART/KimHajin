@@ -24,4 +24,8 @@ public class Like {
     @ManyToOne
     @JoinColumn(name = "post_id")
     private Post post;
+
+    public static Like form(User user, Post post){
+        return new Like(null, user, post);
+    }
 }

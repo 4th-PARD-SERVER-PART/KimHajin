@@ -20,16 +20,19 @@ public class PostResponseDto {
     public static class PostRead{
         private String title;
         private String content;
-        private List<LikeResponseDto.LikeRead> likes;
+        private int likeCount;
 
         public static PostRead from(Post post){
             return new PostRead(
                     post.getTitle(),
                     post.getContent(),
-                    post.getLikes().stream().map(LikeResponseDto.LikeRead::from).collect(Collectors.toList())
+                    countLikes(post)
                     );
         }
 
+        private static int countLikes(Post post) {
+            return post.getLikes().size(); //post.getLikes().stream().count() 사용
+        }
 
     }
 }

@@ -20,15 +20,12 @@ public class LikeResponseDto {
     @NoArgsConstructor @AllArgsConstructor
     public static class LikeRead{
         private Long likeId;
-        private UserResponseDto.UserRead user;
-        private PostResponseDto.PostRead post;
 
         public static LikeRead from(Like like) {
             return new LikeRead(
-                    like.getId(),
-                    UserResponseDto.UserRead.from(like.getUser()),
-                    PostResponseDto.PostRead.from(like.getPost())
+                    like.getId()
             );
         }
+
     }
 }
