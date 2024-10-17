@@ -32,4 +32,9 @@ public class Post {
     public static Post form(String title, String content, User user){
         return new Post(null, title, content, user, null);
     }
+
+    public void setPost(String title, String content){
+        this.title = title;
+        this.content = content;
+    }
 }

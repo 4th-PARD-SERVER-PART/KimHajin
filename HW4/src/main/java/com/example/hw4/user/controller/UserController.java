@@ -1,5 +1,6 @@
 package com.example.hw4.user.controller;
 
+import com.example.hw4.post.dto.PostResponseDto;
 import com.example.hw4.user.dto.UserResponseDto;
 import com.example.hw4.user.dto.UserRequestDto;
 import com.example.hw4.user.service.UserService;
@@ -7,6 +8,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
@@ -17,6 +20,11 @@ public class UserController {
     @GetMapping("/{userId}")
     public ResponseEntity<UserResponseDto.UserRead> getUser (@PathVariable Long userId){
        return ResponseEntity.ok(userService.readUser(userId));
+    }
+
+    @GetMapping("/{userId}/posts")
+    public ResponseEntity<List<PostResponseDto.PostRead>> postfindByuserid(@PathVariable Long userId){
+        return ResponseEntity.ok(userService.postfindByuserId(userId));
     }
 
     @PostMapping("")

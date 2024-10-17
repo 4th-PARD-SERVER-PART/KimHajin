@@ -4,6 +4,7 @@ package com.example.hw4.post.dto;
 import com.example.hw4.like.dto.LikeResponseDto;
 import com.example.hw4.post.entity.Post;
 import com.example.hw4.like.entity.Like;
+import com.example.hw4.user.dto.UserResponseDto;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
