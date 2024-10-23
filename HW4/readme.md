@@ -38,4 +38,14 @@
 
 ---
 
+## 4. 기타 설명
+# DB 구조
+| Schema | User | Post | Like |
+| --- | --- | --- | --- |
+| PK | userId(Long) | postId(Long) | likeId(Long) |
+| FK |  | userId(Long) | userId(Long) |
+|  |  |  | postid(Long) |
+| variable | userName(String) | content(String) |  |
+|  | List<Post> | List<Like> |  |
+
 
