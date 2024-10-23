@@ -63,4 +63,6 @@ like repository에서 JPA 문법을 사용해 Optional<Like> findByUserAndPost(U
 2-1. like가 존재하면 해당 like를 삭제하고 false를 return <br>
 2-2. like가 존재하지 않으면 새롭게 like를 생성하고 ture를 return <br>
 
-
+### like count 
+post의 정보를 보면 like를 리스트화하는 것이 아니라 count로 보여주고 있음. <br>
+List<Like>를 하면 post에서 like 엔티티를 가져옴->like에서는 post를 참조함으로 post 엔티티를 가져옴 으로 인해 무한반복이 되는 이슈가 생겨서 count 형식으로 변환하여 post의 정보를 보여주었음. <br>
