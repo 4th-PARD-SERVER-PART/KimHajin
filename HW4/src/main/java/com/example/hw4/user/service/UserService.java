@@ -41,4 +41,10 @@ public class UserService {
         user.setUser(req.getName());
         userRepo.save(user);
     }
+
+    public void deleteUser(Long userId){
+        Optional<User> u = userRepo.findById(userId);
+        User user = u.get();
+        userRepo.delete(user);
+    }
 }

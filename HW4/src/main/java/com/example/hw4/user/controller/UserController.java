@@ -38,4 +38,10 @@ public class UserController {
         userService.patchUser(userId, req);
         return ResponseEntity.status(HttpStatus.ACCEPTED).body("수정되었습니다.");
     }
+
+    @DeleteMapping("/{userId}")
+    public ResponseEntity<String> deleteUser(@PathVariable Long userId){
+        userService.deleteUser(userId);
+        return ResponseEntity.status(HttpStatus.ACCEPTED).body("삭제되었습니다.");
+    }
 }
