@@ -49,8 +49,7 @@
 | | List-Post | List-Like | |
 
 ### Like - Unlike 구현 방법
-like repository에서 JPA 문법을 사용해 Optional<Like> findByUserAndPost(User user, Post post); 을 만듦. <br>
-- User와 Post를 참조하여 생성된 like를 가져오는 함수 <br>
+like repository에서 JPA 문법을 사용해 Optional<Like> findByUserAndPost(User user, Post post); 을 만듦. -> User와 Post를 참조하여 생성된 like를 가져오는 함수 <br><br>
 - flow  <br>
 1. like를 post할 때 userid와 postid를 path variable로 가져오기 <br>
 2. 해당 id로 user와 post를 가져와 위의 문법을 사용 <br>
