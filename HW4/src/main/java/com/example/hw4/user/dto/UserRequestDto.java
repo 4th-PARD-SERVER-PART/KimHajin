@@ -16,4 +16,11 @@ public class UserRequestDto {
         private String name;
         private List<Post> posts;
     }
+
+    @Getter
+    @JsonInclude(JsonInclude.Include.NON_NULL)
+    @NoArgsConstructor @AllArgsConstructor
+    public static class UserPatchRequest{
+        private String name;
+    }
 }

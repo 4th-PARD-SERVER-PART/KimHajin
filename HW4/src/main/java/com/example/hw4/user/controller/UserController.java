@@ -32,4 +32,10 @@ public class UserController {
         userService.createUser(req);
         return ResponseEntity.status(HttpStatus.CREATED).body("저장되었습니다.");
     }
+
+    @PatchMapping("/{userId}")
+    public ResponseEntity<String> patchUser (@PathVariable Long userId, @RequestBody UserRequestDto.UserPatchRequest req){
+        userService.patchUser(userId, req);
+        return ResponseEntity.status(HttpStatus.ACCEPTED).body("수정되었습니다.");
+    }
 }

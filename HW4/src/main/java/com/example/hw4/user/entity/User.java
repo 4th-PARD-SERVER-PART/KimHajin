@@ -22,4 +22,7 @@ public class User {
     @OneToMany(mappedBy = "user" , cascade = CascadeType.ALL , orphanRemoval = true)
     private List<Post> posts;
 
+    public void setUser(String name){
+        this.name = name;
+    }
 }

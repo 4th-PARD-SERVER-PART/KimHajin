@@ -33,4 +33,12 @@ public class UserService {
         User user = u.get();
         return UserResponseDto.convertPostList(user.getPosts());
     }
+
+    public void patchUser(Long userId, UserRequestDto.UserPatchRequest req){
+        Optional<User> u = userRepo.findById(userId);
+        User user = u.get();
+
+        user.setUser(req.getName());
+        userRepo.save(user);
+    }
 }
