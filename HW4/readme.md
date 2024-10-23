@@ -46,7 +46,7 @@
 | FK |  | userId(Long) | userId(Long) |
 |  |  |  | postid(Long) |
 | variable | userName(String) | content(String) |  |
-|  List<Post> | List<Like> | |
+|  List<Post> || List<Like> | |
 
 ### Like - Unlike 구현 방법
 <br>
