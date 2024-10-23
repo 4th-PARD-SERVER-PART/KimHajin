@@ -3,7 +3,6 @@
 # **Hw4- hajin**  
 블로그 플랫폼 만들기 + 선택도 해보았습니다.  
 
-# Backend API Documentation
 
 ## 1. User 기능
 
