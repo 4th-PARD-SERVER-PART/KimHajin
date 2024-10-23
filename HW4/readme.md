@@ -40,8 +40,8 @@
 
 | HTTP Method | URL                            | Description                    | Request Example | Image Placeholder |
 |-------------|--------------------------------|--------------------------------|-----------------|-------------------|
-| POST        | /post/{postId}/like            | Like a post                    | N/A             | ![4 postman-like_post](https://github.com/user-attachments/assets/620b4d6a-8584-48a5-aca2-e74d56a5f66f)  ![5 postman-like 이후에 1번 게시물 결과 (count증가)](https://github.com/user-attachments/assets/1aa6d0e3-c9c2-4823-94be-1988c14be35c)   |
-| DELETE      | /post/{postId}/like            | Unlike a post                  | N/A             | ![5 postman- like 2번하면 취소되는 결과(count 감소)](https://github.com/user-attachments/assets/cbcfd775-4b1c-4d52-ad39-599388fff9bc) |
+| POST        | /like/{postId}/{userId}            | Like a post                    | N/A             | ![4 postman-like_post](https://github.com/user-attachments/assets/620b4d6a-8584-48a5-aca2-e74d56a5f66f)  ![5 postman-like 이후에 1번 게시물 결과 (count증가)](https://github.com/user-attachments/assets/1aa6d0e3-c9c2-4823-94be-1988c14be35c)   |
+| DELETE      | /like/{postId}/{userId}         | Unlike a post                  | N/A             | ![5 postman- like 2번하면 취소되는 결과(count 감소)](https://github.com/user-attachments/assets/cbcfd775-4b1c-4d52-ad39-599388fff9bc) |
 
 ---
 
