@@ -11,6 +11,7 @@ import lombok.NoArgsConstructor;
 import java.util.List;
 
 public class UserRequest {
+
     @Getter
     @Builder
     @NoArgsConstructor @AllArgsConstructor
@@ -32,4 +33,6 @@ public class UserRequest {
         private String name;
         private List<Book> books;
     }
+
+    //왜 readRequest와 create를 나눴나?
 }
