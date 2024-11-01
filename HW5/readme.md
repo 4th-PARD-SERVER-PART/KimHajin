@@ -7,7 +7,11 @@ HW4 기능에 구글 로그인 구현하기
 ## 1. Oauth 구현 - 구글 로그인(User post)
 | HTTP Method | URL                    | Description         | Image Placeholder       |
 |-------------|------------------------|---------------------|-------------------------|
-| GET       | /loginForm                | Create a new user  |  |
+| GET       | /loginForm                | Create a new user  | ![loginform ](https://github.com/user-attachments/assets/448eac66-6c6b-43e9-860b-72640f3b8273)
+![구글 로그인](https://github.com/user-attachments/assets/536ac83d-c57c-43a5-9314-94a875eac0d2)
+![로그인 정보 DB 저장](https://github.com/user-attachments/assets/5a92f0bd-48a9-42ff-9303-86a279f3d034)
+![loginfrom - swagger](https://github.com/user-attachments/assets/f614536b-d53d-4300-b23d-52efda553607)
+ |
 ---
 
 ## 2. User 기능
