@@ -4,17 +4,16 @@
 HW4 기능에 구글 로그인 구현하기 
 
 ---
-## 1. Oauth 구현 - 구글 로그인
+## 1. Oauth 구현 - 구글 로그인(User post)
 | HTTP Method | URL                    | Description         | Image Placeholder       |
 |-------------|------------------------|---------------------|-------------------------|
-| GET       | /loginForm                | Create a new user  | ![1  postman-user_post](https://github.com/user-attachments/assets/726af1f2-d353-4c9b-af26-e8138876a1d6) ![1 DB - user-data](https://github.com/user-attachments/assets/459e5b11-5dbf-4eb2-b0c7-bac16b650e08)  |
+| GET       | /loginForm                | Create a new user  |  |
 ---
 
 ## 2. User 기능
 
 | HTTP Method | URL                    | Description         | Request Example                 | Image Placeholder       |
 |-------------|------------------------|---------------------|---------------------------------|-------------------------|
-| POST        | /user                   | Create a new user   | `{"username": "name"}`          | ![1  postman-user_post](https://github.com/user-attachments/assets/726af1f2-d353-4c9b-af26-e8138876a1d6) ![1 DB - user-data](https://github.com/user-attachments/assets/459e5b11-5dbf-4eb2-b0c7-bac16b650e08)  |
 | GET         | /user/{userId}          | Get user by ID      | N/A                             | ![user 조회](https://github.com/user-attachments/assets/3f5a91b2-9e95-4733-99d1-5854077dca60) | 
 | GET         | /user/{userId}/posts          | Get user post      | N/A                             | ![8  postman - userid로 조회 시 자신이 작성한 게시물](https://github.com/user-attachments/assets/972c60b5-7acd-4cc7-9f4b-2413778cb632)    |
 | PATCH       | /user/{userId}          | Update user details | `{"username": "updatename"}`   | ![10 postman - userid로 User정보 수정하기](https://github.com/user-attachments/assets/8b5b9c6e-eaa6-4cfc-bb13-e66daa5a428b)  ![10 DB - data 수정 결과](https://github.com/user-attachments/assets/3e63e5f2-f7f1-42fc-8ba0-b4d95b2f130a) |
