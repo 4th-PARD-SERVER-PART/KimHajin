@@ -8,7 +8,7 @@ HW4 기능에 구글 로그인 구현하기
 
 | HTTP Method | URL                    | Description         | Image Placeholder       |
 |-------------|------------------------|---------------------|-------------------------|
-| GET       | /loginForm                | Create a new user  | ![loginform ](https://github.com/user-attachments/assets/448eac66-6c6b-43e9-860b-72640f3b8273 |
+| GET       | /loginForm                | Create a new user  | ![loginform ](https://github.com/user-attachments/assets/448eac66-6c6b-43e9-860b-72640f3b8273) |
 ---
 
 ## 2. User 기능
