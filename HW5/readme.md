@@ -4,7 +4,7 @@
 HW4 기능에 구글 로그인 구현하기 
 
 ---
-##1. Oauth 구현 - 구글 로그인
+## 1. Oauth 구현 - 구글 로그인
 | HTTP Method | URL                    | Description         | Image Placeholder       |
 |-------------|------------------------|---------------------|-------------------------|
 | GET       | /loginForm                | Create a new user  | ![1  postman-user_post](https://github.com/user-attachments/assets/726af1f2-d353-4c9b-af26-e8138876a1d6) ![1 DB - user-data](https://github.com/user-attachments/assets/459e5b11-5dbf-4eb2-b0c7-bac16b650e08)  |
@@ -22,7 +22,7 @@ HW4 기능에 구글 로그인 구현하기
 
 ---
 
-## 2. Post 기능
+## 3. Post 기능
 
 | HTTP Method | URL                          | Description                    | Request Example               | Image Placeholder       |
 |-------------|------------------------------|--------------------------------|-------------------------------|-------------------------|
@@ -34,7 +34,7 @@ HW4 기능에 구글 로그인 구현하기
 
 ---
 
-## 3. Like 기능
+## 4. Like 기능
 
 | HTTP Method | URL                            | Description                    | Request Example | Image Placeholder |
 |-------------|--------------------------------|--------------------------------|-----------------|-------------------|
@@ -43,26 +43,4 @@ HW4 기능에 구글 로그인 구현하기
 
 ---
 
-## 4. 기타 설명
-### DB 구조
-| Schema | User | Post | Like |
-| --- | --- | --- | --- |
-| PK | userId(Long) | postId(Long) | likeId(Long) |
-| FK |  | userId(Long) | userId(Long) |
-|  |  |  | postid(Long) |
-| variable | userName(String) | content(String) |  |
-| | List-Post | List-Like | |
-
-### Like - Unlike 구현 방법
-like repository에서 JPA 문법을 사용해 Optional<Like> findByUserAndPost(User user, Post post); 을 만듦. -> 특정 User와 특정 Post를 기준으로 해당하는 Like를 조회하는 함수
-- flow  <br>
-1. like를 post할 때 userid와 postid를 path variable로 가져오기 <br>
-2. 해당 id로 user와 post를 가져와 위의 문법을 사용 <br>
-2-1. like가 존재하면 해당 like를 삭제하고 false를 return <br>
-2-2. like가 존재하지 않으면 새롭게 like를 생성하고 ture를 return <br>
-
-### Like count
-Post의 정보를 조회할 때, Like를 리스트로 반환하지 않고 Like의 개수(count)로 표시하고 있음.  
-이는 Post 엔티티에서 Like 엔티티를 리스트로 가져오게 되면, Like가 다시 Post를 참조하고, Post는 또 Like를 참조하는 식으로 서로를 무한히 참조하는 순환 참조(무한 반복) 문제가 발생함.  
-따라서 Like 리스트 대신 Like의 개수를 세는 방식으로 변환하여, Post의 정보를 표시하도록 구현하였음.
 
