@@ -45,9 +45,9 @@ HW4 기능에 구글 로그인 구현하기
 
 | HTTP Method | URL                            | Description                    | Request Example | Image Placeholder |
 |-------------|--------------------------------|--------------------------------|-----------------|-------------------|
-| POST        | /like/{postId}/{userId}            | Like a post                    | N/A             | ![like post](https://github.com/user-attachments/assets/410163b9-8503-4a7b-934e-c6aa7069c0a8) 
-![5 postman-like 이후에 1번 게시물 결과 (count증가)](https://github.com/user-attachments/assets/1aa6d0e3-c9c2-4823-94be-1988c14be35c)   |
-| DELETE      | /like/{postId}/{userId}         | Unlike a post                  | N/A             | ![5 postman- like 2번하면 취소되는 결과(count 감소)](https://github.com/user-attachments/assets/cbcfd775-4b1c-4d52-ad39-599388fff9bc) |
+| POST        | /like/{postId}/{userId}            | Like a post                    | N/A             | ![like post](https://github.com/user-attachments/assets/410163b9-8503-4a7b-934e-c6aa7069c0a8)    |
+
+### 한 번 post하면 post의 Likecount 증가, 두 번째 post는 취소됨(likecount 감소)
 
 ---
 
