@@ -47,7 +47,7 @@ HW4 기능에 구글 로그인 구현하기
 |-------------|--------------------------------|--------------------------------|-----------------|-------------------|
 | POST        | /like/{postId}/{userId}            | Like a post                    | N/A             | ![like post](https://github.com/user-attachments/assets/410163b9-8503-4a7b-934e-c6aa7069c0a8)    |
 
-### 한 번 post하면 post의 Likecount 증가, 두 번째 post는 취소됨(likecount 감소)
+한 번 post하면 post의 Likecount 증가, 두 번째 post는 취소됨(likecount 감소)
 
 ---
 
