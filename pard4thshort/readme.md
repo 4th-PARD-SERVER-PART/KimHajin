@@ -1,15 +1,7 @@
 
 ---
 
-<div align="center">
-
-<!-- logo -->
-<img src="https://user-images.githubusercontent.com/80824750/208554611-f8277015-12e8-48d2-b2cc-d09d67f03c02.png" width="400"/>
-
 ### 기머전시 - Spring Boot Survey Site 🎉
-
-[<img src="https://img.shields.io/badge/-readme.md-important?style=flat&logo=google-chrome&logoColor=white" />]() [<img src="https://img.shields.io/badge/-tech blog-blue?style=flat&logo=google-chrome&logoColor=white" />]() [<img src="https://img.shields.io/badge/release-v1.0.0-yellow?style=flat&logo=google-chrome&logoColor=white" />]()  
-[<img src="https://img.shields.io/badge/프로젝트 기간-2024.11.01~2024.11.30-green?style=flat&logo=&logoColor=white" />]()
 
 </div>
 
