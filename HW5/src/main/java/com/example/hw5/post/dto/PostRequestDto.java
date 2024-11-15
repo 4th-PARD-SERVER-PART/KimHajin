@@ -15,7 +15,6 @@ public class PostRequestDto {
     public static class PostCreateRequest{
         private String title;
         private String content;
-        private List<Like> likes;
     }
 
     @Getter

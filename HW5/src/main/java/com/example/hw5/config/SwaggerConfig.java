@@ -22,7 +22,7 @@ public class SwaggerConfig {
 
     private Info apiInfo(){
         return new Info()
-                .title("HW 5")
+                .title("HW 5 API")
                 .description("김하진의 HW5")
                 .version("1.0.0");
     }
