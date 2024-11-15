@@ -1,7 +1,7 @@
 
 ---
 
-### 기머전시 - Spring Boot Survey Site 🎉
+### 기머전시 - Spring Boot Survey Site
 
 </div>
 
