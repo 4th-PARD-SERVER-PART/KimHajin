@@ -2,8 +2,10 @@
 **기머전시**: 기념일 이머전시 사이트
 
 ## 🖥️ 개발 사용 툴 
-Spring boot
-java
+Spring boot 
+
+## API 명세서
+https://sand-jaguar-c98.notion.site/api-709d39a7474843b2a0416b401536e20a?pvs=4
 
 ---
 
