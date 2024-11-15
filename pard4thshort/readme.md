@@ -23,7 +23,9 @@
 |-----------------|----------------------|----------------------|
 | **POST**         | `/user`         | Create a new user and user info   |
 
-- Reqeust body
+ 
+ Reqeust body
+ 
  | String        |     name     |
  | String        |     dateinfo     |
  | List<String>        |     answer     |
